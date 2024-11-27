@@ -1,0 +1,49 @@
+<!--Navigation Bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ASSIGNMENT TRACKER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <% if (title == "Home") {%>
+            <a class="nav-link active" href="/home">
+              <% } else { %>
+                <a class="nav-link "  href="/home">
+                <% } %>
+              <i class="fa-solid fa-house"></i> Home</a>
+              
+          </li>
+
+          <li class="nav-item">
+            <% if (title == "Assignment") { %>
+            <a class="nav-link active" href="/tracklist">
+            <% } else { %>
+            <a class="nav-link" href="/tracklist"> 
+            <% } %>
+            <i class="fa-solid fa-clipboard-check"></i> Tracker</a>
+        </li>
+
+          <li class="nav-item">
+            <% if (title == "About Us") { %>
+            <a class="nav-link active" href="/about">
+            <% } else { %>
+            <a class="nav-link" href="/about"> 
+            <% } %>
+            <i class="fa-solid fa-address-card"></i> About</a>
+        </li>
+
+          <li class="nav-item">
+            <% if (title == "FAQ") { %>
+            <a class="nav-link active" href="/FAQ">
+            <% } else { %>
+            <a class="nav-link" href="/FAQ"> 
+            <% } %>
+            <i class="fa-solid fa-question"></i> FAQ</a>
+        </li>
+      </div>
+    </div>
+  </nav>
