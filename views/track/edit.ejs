@@ -1,0 +1,68 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<link href="../Content/app.css" rel="stylesheet" type="text/css">
+
+<br>
+
+<!-- Content for the Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+            <br>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="courseTextField">Course</label>
+                    <input type="text" class="form-control"
+                    id="courseTextField"
+                    placeholder="Enter the Course name"
+                    name="courseTextField" required>
+                </div>
+
+    
+
+                
+
+                <br>
+
+                <div class="form-group">
+                    <label for="duedateTextArea">DueDate</label>
+                    <textarea type="text" class="form-control"
+                    id="duedateTextArea"
+                    placeholder="Enter the Due Date"
+                    name="DueDate" required></textarea>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="statusTextField">Status</label>
+                    <input type="text" class="form-control"
+                    id="StatusTextField"
+                    placeholder="Enter the Status of the Assignment"
+                    name="Status" required>
+                </div>
+
+                <br>
+                <br>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> Submit</button>
+                
+                    <a href="/tracklist" class="btn btn-warning">
+                        <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/footer.ejs %>
